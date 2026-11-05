@@ -28,7 +28,7 @@
 </head>
 <body>
   <h1>Gout Diet</h1>
-  <p class="effective">Privacy Policy - Effective October 24, 2026</p>
+  <p class="effective">Privacy Policy - Effective November 4, 2026</p>
 
   <h2>Overview</h2>
   <p>Gout Diet is a health journal that keeps your health data on your device. Everything you log - readings, flares, food, medications - stays in the app’s local database. We do not require an account and we never receive your health information. With your consent we use a privacy-friendly analytics tool and an error-reporting tool to improve the app (see “Analytics and diagnostics” below). You can turn this off at any time in More → Anonymous analytics.</p>
@@ -40,13 +40,19 @@
   <p>All information you enter is stored on your device, in the app’s local database. It is not uploaded to us or to any third party, and the app does not sync it to any cloud service. If iCloud Backup is turned on, iOS includes the app’s data in your device backup, as it does for other apps. That backup is stored in your iCloud account and is not sent to us.</p>
 
   <h2>Analytics and diagnostics</h2>
-  <p>With your consent, we use two privacy-friendly tools to improve the app. For usage analytics we use PostHog, hosted in the European Union: it records anonymous, app-level events (for example, that the app was opened, or that a reading was logged - never the value) together with general technical details such as app version, device model, operating system and language. For error reporting we use Sentry, which records crash and diagnostic information so we can fix problems. Both tools use a random identifier that is not your Apple account and not your advertising ID, and they are not linked to your identity. The health information you enter is never sent. This data is used only to improve the app - it is never sold and never used for advertising. You gave consent on first launch and can withdraw it at any time in More → Anonymous analytics.</p>
+  <p>You can choose whether to allow analytics and diagnostics on first launch, and you can change this choice at any time in More → Anonymous analytics. This setting controls both PostHog and Sentry.</p>
+  <p>When enabled, PostHog, hosted in the European Union, records app-level events, such as opening the app or logging a reading, together with technical information such as app version, device model, operating system and language. These events do not include the values of your health entries. PostHog uses a random analytics identifier rather than your Apple account or advertising identifier. PostHog receives your device’s IP address with each request; our PostHog projects are set to discard it, so it is not stored with events.</p>
+  <p>Sentry receives crash reports and diagnostic information, including stack traces, technical context and performance information, to help us fix problems. Reports are associated with a random installation identifier created by Sentry’s software, not with your Apple account. Sentry receives your device’s IP address with each report and may use it to add approximate location information, such as country or city, to the report. Screenshots and Sentry’s default collection of personally identifying information are disabled. In version 1.0.8, the app also filters recognized database error details that could contain health entries and excludes console messages from diagnostic breadcrumbs.</p>
+  <p>In the iOS app, version 1.0.8 starts PostHog only after analytics consent. Turning off Anonymous analytics shuts down PostHog and Sentry, and version 1.0.8 also removes queued, unsent PostHog events from the device. Events that PostHog had already started uploading, or scheduled for upload, before it finished shutting down may still be sent. Turning analytics off does not delete information already sent to these services.</p>
+  <p>Before October 27, 2026, PostHog could use the IP address, before discarding it, to add approximate location information, such as country or city, to Gout Diet analytics. Since that date, this location enrichment has been disabled for new Gout Diet events. This change does not erase location information collected earlier.</p>
+  <p>We use analytics and diagnostics to improve the app. We do not sell this information or use it for advertising.</p>
 
   <h2>Purchases and subscriptions</h2>
   <p>Gout Diet offers an optional paid subscription (Gout Diet Premium) that unlocks extra features. Payments are handled by the App Store. To activate your subscription, unlock premium features and let you restore past purchases, we use RevenueCat, a subscription infrastructure provider acting on our behalf. When you buy or restore a subscription, RevenueCat receives purchase information from the App Store - which product you bought, your subscription status and your transaction history - together with a random app-user identifier that is not your Apple ID, name or email. The health information you enter is never sent to RevenueCat. This is used only to run and restore your subscription, never for advertising. RevenueCat processes this data as described in its privacy policy at <a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a>.</p>
 
   <h2>Information we do NOT collect</h2>
-  <p>We do not collect personal data: no name, email, account or contact details. Your health entries are never sent to us. We show no ads, we do not track you across other apps or websites, and we do not access your advertising identifier (IDFA) or build an advertising profile of you.</p>
+  <p>You do not need a Gout Diet account to use the app. We do not ask for your name, email address or contact details to use its features. We do not include the values of your health entries in app-level analytics events.</p>
+  <p>The app transmits the limited analytics, diagnostic and purchase information described in this policy, including service-specific identifiers. We show no ads, do not access your advertising identifier (IDFA), and do not use this information to track you across other companies’ apps or websites for advertising or to build an advertising profile of you.</p>
 
   <h2>Notifications</h2>
   <p>If you enable reminders (for medication or hydration), they are scheduled locally on your device. No information leaves your device to deliver them. You can turn reminders off at any time in the app or in your device settings.</p>
@@ -58,10 +64,14 @@
   <p>The app may ask for permission to send local notifications. This is optional and used only for the reminders you set up. Denying it does not affect the rest of the app.</p>
 
   <h2>Data retention and deletion</h2>
-  <p>Because your data is stored on your device, you are fully in control. You can delete individual entries inside the app, and deleting the app removes all of its data from your device permanently. A device backup made earlier (for example, in iCloud) can still contain the data until that backup is replaced or deleted. We hold no copy to delete on your behalf.</p>
+  <p>You can delete individual entries inside the app. You can also remove your health records and profile from the app’s local database using More → Your data → Delete all data.</p>
+  <p>In the iOS app, version 1.0.8 also cancels medication, hydration and daily check-in reminders, removes locally queued PostHog events and resets the PostHog analytics identifier when you use Delete all data. If analytics is enabled, it resumes with a new identifier after cleanup. If analytics is disabled, a new identifier is created when you next enable it.</p>
+  <p>Delete all data does not cancel your App Store subscription or change your consent choices. Limited installation settings are retained, including cached subscription status and information used to limit review and subscription prompts.</p>
+  <p>Deleting the app removes its local health database from your device. Earlier device backups, including iCloud backups, may still contain your data until those backups are replaced or deleted. Copies you previously exported or shared are not deleted by these actions and must be managed separately.</p>
+  <p>Deleting local data, resetting the PostHog identifier or deleting the app does not delete analytics or diagnostic information already sent to PostHog or Sentry, or purchase records held by Apple or RevenueCat. For questions about deletion, contact us at <a href="mailto:vika.abr71@gmail.com">vika.abr71@gmail.com</a>.</p>
 
   <h2>Children’s privacy</h2>
-  <p>Gout Diet is intended for adults managing their own health and is not directed to children under 13. In any case, the app collects no personal data from anyone.</p>
+  <p>Gout Diet is intended for adults managing their own health and is not directed to children under 13.</p>
 
   <h2>Not medical advice</h2>
   <p>Gout Diet helps you log and remember your treatment. It is not a substitute for professional medical advice, diagnosis or treatment, and it does not recommend medications or doses. Always follow your doctor’s guidance.</p>
